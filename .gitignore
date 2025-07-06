@@ -1,0 +1,38 @@
+# Bytecode Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+.venv/
+env/
+venv/
+
+# Arquivos do Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+
+# Arquivos temporários
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# Arquivos de configuração
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# Arquivos de migração criados automaticamente
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
