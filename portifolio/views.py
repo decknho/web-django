@@ -14,9 +14,9 @@ def home(request):
             mensagem = form.cleaned_data['mensagem']
 
             assunto = f"Nova mensagem de {nome}"
-            corpo = f"{mensagem}\n\n\nE-mail: {email}\n\nCelular: {celular}"
+            corpo = f"{mensagem}\nE-mail: {email}\nCelular: {celular}"
 
-            send_mail(assunto, corpo, settings.EMAIL_HOST_USER, ['decknho@hotmail.com'], fail_silently=False)
+            send_mail(assunto, corpo, settings.EMAIL_HOST_USER, ['deckgamer7@gmail.com'], fail_silently=False)
             return render(request, 'portifolio/contato_enviado.html')
     else:
         form = ContatoForm()
