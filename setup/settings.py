@@ -16,6 +16,10 @@ DEBUG = config('DEBUG', cast=bool, default=False)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-django-production-b41b.up.railway.app',
+]
+
 
 # Application definition
 
