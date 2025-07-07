@@ -18,8 +18,8 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 CSRF_TRUSTED_ORIGINS = [
     'https://web-django-production-b41b.up.railway.app',
-    'www.dereckeder.com.br'
-    'dereckeder.com.br'
+    'https://www.dereckeder.com.br'
+    'https://dereckeder.com.br'
 ]
 
 
