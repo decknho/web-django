@@ -1,4 +1,5 @@
 from django.core.mail import send_mail
+from django.contrib import messages
 from django.shortcuts import render
 from .forms import ContatoForm
 from django.conf import settings
@@ -17,7 +18,9 @@ def home(request):
             corpo = f"{mensagem}\nE-mail: {email}\nCelular: {celular}"
 
             send_mail(assunto, corpo, settings.EMAIL_HOST_USER, ['deckgamer7@gmail.com'], fail_silently=False)
-            return render(request, 'portifolio/contato_enviado.html')
+
+            messages.success(request, 'Mensagem enviada!')
+            form = ContatoForm()  # limpa o formulário
     else:
         form = ContatoForm()
 
