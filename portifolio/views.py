@@ -15,7 +15,7 @@ def home(request):
             mensagem = form.cleaned_data['mensagem']
 
             assunto = f"Nova mensagem de {nome}"
-            corpo = f"{mensagem}\nE-mail: {email}\nCelular: {celular}"
+            corpo = f"{mensagem}\n\nE-mail: {email}\nCelular: {celular}"
 
             send_mail(assunto, corpo, settings.EMAIL_HOST_USER, ['deckgamer7@gmail.com'], fail_silently=False)
 
