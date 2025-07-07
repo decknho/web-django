@@ -17,9 +17,9 @@ DEBUG = config('DEBUG', cast=bool, default=False)
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://web-django-production-b41b.up.railway.app',
-    'https://www.dereckeder.com.br'
-    'https://dereckeder.com.br'
+    'https://*.railway.app',
+    'https://dereckeder.com.br',
+    'https://www.dereckeder.com.br',
 ]
 
 
