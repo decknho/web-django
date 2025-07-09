@@ -36,6 +36,7 @@ DJANGO_APPS = [
 
 MY_APPS = [
     'portifolio',
+    'usuario',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + MY_APPS
